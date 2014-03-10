@@ -1,0 +1,14 @@
+#base=files
+MtMultiCompositeField.js
+ImageMultiField.js
+smartImage.js
+LeadProductInfo.js
+AddButtonControll.js
+TextImageEditor.js
+RefreshHierachyParent.js
+ProductGrid.js
+ExtensionPanel.js
+ddpathfield.js
+GridDataResource.js
+BannerDialogControl.js
+MediaCarouselWidget.js

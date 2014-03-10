@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:scaffolding="/etc/scaffolding/oakwood/property"
+    cq:tags="[properties:orientation/landscape]"
+    jcr:mixinTypes="[cq:Taggable]"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="commerce/components/product"
+    apartment_amenities="[European Style Cabinets,Granite Countertops]"
+    city="New York City"
+    community_amenities="[24-Hour Concierge Service,Doorman]"
+    furnished="true"
+    latitude="40.8208549"
+    localscene="&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Located just minutes from Wall Street, South Street Seaport, and the historic Finacial District&lt;/li>&#xa;&lt;li>Easy walk to the ferry with access to&amp;nbsp;Ellis Island, Staten Island,&amp;nbsp;and the Statue of Liberty&lt;/li>&#xa;&lt;li>Close to all major subway lines including the Green 4 and 5 express line&lt;/li>&#xa;&lt;li>Just a short walk to museums, shopping and entertainment&lt;/li>&#xa;&lt;/ul>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+    longitude="-74.015776"
+    name="10 Hanover Sq"
+    overview="&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;p>Perfectly located and featuring spacious apartments with tremendous amenities this community is located&amp;nbsp;in the financial district in New York City.&amp;nbsp; Each&amp;nbsp;luxury&amp;nbsp;apartment features hardwood floors, European-style cabinets, granite countertops, and stainless steel appliances while bathrooms offer soaking tubs with separate showers and granite tile.&lt;/p>&#xa;&lt;p>For an additional cost residents can enjoy a 30,000 square foot fitness center complete with two story rock wall, therapy room, sauna, steam room, and spa-style locker rooms.&amp;nbsp;This fabulous&amp;nbsp;community also&amp;nbsp;features a great room with large screen television and catering kitchen, and a rooftop deck perfect for sunbathing or just soaking in the view.&amp;nbsp;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+    phonenum="877.902.0832"
+    postcode="10005"
+    price="259$"
+    room_type="[studio,onebedroom,twobedroom]"
+    state="New York">
+    <propertyimages jcr:primaryType="nt:unstructured">
+        <propertyimage_1 jcr:primaryType="nt:unstructured">
+            <image
+                jcr:lastModified="{Date}2014-02-21T10:07:47.990+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/geometrixx-outdoors-app/aboutus.jpg"/>
+        </propertyimage_1>
+        <propertyimage_2 jcr:primaryType="nt:unstructured">
+            <image
+                jcr:lastModified="{Date}2014-02-21T10:07:47.990+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/geometrixx-outdoors-app/mountain-bike.jpg"/>
+        </propertyimage_2>
+    </propertyimages>
+</jcr:root>

@@ -1,0 +1,490 @@
+/*******************************************************************************
+ Property Details
+ *******************************************************************************/
+
+.leftNavSpan {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #666666;
+}
+
+.leftNavSpan:hover {
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+.propertyDetailsWrapper {
+	width:100%;
+	overflow:auto;		
+	clear: both;
+}
+
+.propertyDetailsHeader {
+	border-bottom: 1px solid #BEB78E; 
+	padding: 5px 5px 5px 10px;
+}
+
+.propertyDetailsAddressSpacing {
+	margin-bottom:10px;
+}
+
+.propertyDetailsContainer {
+	overflow: hidden;  
+}
+
+
+.propertyDetailsContainer .leftNav {
+	float: left;
+}
+
+.propertyDetailsContainer .rightContent {
+	float: left; 
+	padding-left: 10px; 
+	padding-top: 8px; 
+	width: 79%;
+}
+
+.propertyDetailsContainer .iconRight {
+	text-align:right;		
+	margin-bottom: 5px;
+}
+
+.propertySummary {
+	background-color: #DDDDDD;
+	padding: 10px;
+}
+
+.propertySummaryContainer {
+	width: auto; 
+	overflow: hidden; 
+	clear: both;
+	color: #666666;
+}
+
+.propertySummaryContainer .photoGalleryContainer{
+	float: left; 
+	width: 42%;
+}
+
+.propertySummaryContainer .photoGalleryContainer .whiteCanvas{
+	width: 300px; 
+	border: 2px solid #FFF; 
+	background-color: #FFF                                                        
+}
+
+.propertySummaryContainer .photoGalleryContainer .navigationContainer{
+	width: 300px;                                                      
+}
+
+.summaryContainer { 	
+ 	float: right; 
+ 	width: 54%;
+}
+
+.summaryContainer .propertyName {
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+.summaryContainer .propertyNameLarge {
+	color: #868940;
+}
+
+.summaryContainer .amenitiesContainer {
+	overflow: auto; 
+	margin-top: 2px;
+	text-align: left; 
+}
+
+.summaryContainer .amenitiesContainer .amenitiesSection {
+	float: left; 
+	width: 49%; 
+}
+
+.amenitiesList {
+	list-style-image: url(/etc/designs/oakwood/resources/www.oakwood.com/images/propertyDetails/check.gif);
+}
+
+.bookNowContainer {
+	width: 100%;
+	overflow: auto; 
+	margin-top: 10px;
+}
+
+.bookNowContainer .pricesPanel {
+ 	float: left; 
+ 	width: 304px;	
+}
+.bookNowContainer .buttonsPanel {
+	float: right; 
+	width: 51%; 
+	padding-top: 20px
+}
+
+.profileOverviewSection {	
+	border: 1px solid #BEB78E;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+
+.profileOverviewSection .subtitle {
+	color: #666666;
+	position: relative;
+	left: -5px;
+	top:-9px;
+	padding: 3px;
+	font-weight: bold;
+	background: #FFF;
+}
+
+.profileOverviewSection .mapDirectionsContainer {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.profileOverviewSection .mapDirectionsContainer .left {
+	margin-top: 10px;
+	float: left; 
+	width: 200px;
+}
+
+.profileOverviewSection .mapDirectionsContainer .middle {
+	margin-top: 10px;
+	float: right; 
+	width: 160px;
+}
+
+.profileOverviewSection .mapDirectionsContainer .right {
+	width: 302px;
+	float: right;
+}
+
+.mapDirectionsTable {
+	width: 100%;	
+}
+
+.mapDirectionsTable th {
+	text-align: left;
+	height: 30px;	
+}
+
+.mapDirectionsTable td {
+	text-align: left;
+	height: 30px;	
+}
+
+.mapDirectionsTable .bottom {
+	border-bottom: 1px solid #000;	
+}
+
+.profileOverviewSection .amenitiesContainer  {
+	width: 100%; 
+	overflow: auto
+}
+
+.profileOverviewSection .amenitiesContainer .left  {
+	float: left; 
+	width: 230px
+}
+
+.profileOverviewSection .amenitiesContainer .middle  {
+	float: left; 
+	width: 230px
+}
+
+.profileOverviewSection .amenitiesContainer .right  {
+	float: left; 
+	padding-top: 25px
+}
+
+.profileOverviewSection .localSceneContainer  {
+	width: 100%; 
+	overflow: auto
+}
+	          
+.profileOverviewSection .localSceneContainer .left {
+	float: left; 
+	width: 70%;	
+}
+
+.profileOverviewSection .localSceneContainer .right {
+	float: right; 
+	width: 28%;
+}
+
+.profileOverviewSection .localSceneContainer .poi {
+	margin-bottom: 5px;	
+}
+
+.profileOverviewSection .localSceneContainer .poiSpacing {
+	margin-left: 5px;
+}
+
+.moreInfoText {
+	text-align: center; 
+	margin: 10px 0px 10px 0px;
+	font-size: 13px;
+	color: #666666;
+}
+
+.petTitle{
+	font-weight:bold;
+}
+	
+.virtualToursBox {
+	width: 150px; 
+	float: left; 
+	border: 1px solid #BEB78E; 
+	text-align: center; 
+	padding: 20px; 
+	margin: 10px
+}
+
+.subtitleAlign{
+	position: relative;
+	padding: 10px;
+	top:-7px;
+	font-weight: normal; 
+	text-decoration: none; 
+	line-height: 15px;
+	
+}
+
+
+.topprofileboldtextln {
+	border-bottom: 1px solid #EFEDE5;
+	color: #000000; 
+	font-size: 14px; 
+	font-weight: bold; 
+	text-decoration: none;
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width:100%;
+	}
+	
+.hr {
+	height: 1px;
+	color: #FFFFFF;
+	background-color: #FFFFFF;
+	border:none;
+}
+
+.websiteSpecials {
+	background-color: #3399ff;
+	width: 300px; 
+	margin-top:10px; 
+	padding:8px; 
+	font-size: 15px; 
+	font-weight: bold;
+	color: #FFFFFF;
+	-moz-border-radius: 8px;
+	border-radius: 8px; 
+}
+
+.amenitiesContentsMore {
+	text-align:right;
+	width:90%;
+}
+
+.imageBorder {
+	text-decoration:none;
+	border-right: 1px solid #C9C39C;
+	border-left: 1px solid #C9C39C;
+	border-top: 1px solid #C9C39C;
+	border-bottom: 1px solid #C9C39C;
+}
+
+.viewgallerytext {
+	font-size: 11px;
+}
+
+.profileLowerPanelContainer {
+	margin: 10px 0px 10px 0px;
+}
+
+.profileLowerPanelTitle {
+	border: 1px solid #BEB78E; 
+	background-color: #DED7C2; 
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	font-size: 22px;
+
+}
+
+
+.profileLowerPanelContainer .lowerPanelContent {
+	padding: 10px 0px 10px 20px;
+	font-size: 12px;
+	color:#666666;
+}
+
+.profileLowerPanelContainer .lowerPanelContentSignature {
+	padding: 10px 0px 10px 20px;
+	font-size: 12px;
+	overflow: auto;
+}
+
+.poiPanelWrapper {
+	font-size: 12px;
+}
+
+.poiPanelWrapper .featuredListContainer {
+	margin: 0px auto 20px auto;
+	overflow: hidden; 
+	width: 92%;
+}
+
+.poiPanelWrapper .featuredListContainer .divider {
+	clear: both;
+	width: 95%;
+}
+
+.poiPanelWrapper .featuredListContainer .poiBox{
+	width: 220px; 
+	float: left; 
+	border: 1px solid; 
+	margin: 0px 10px 0px 0px; 
+	border: 1px solid #BEB78E; 
+}
+
+.poiPanelWrapper .featuredListContainer .title { 
+	border-bottom: 1px solid #BEB78E; 
+	font-weight: bold;
+	padding: 1px 5px 1px 5px;
+}
+
+.poiPanelWrapper .featuredListContainer .address { 
+	padding: 5px;
+}
+
+
+.poiPanelWrapper .radiusMiles {
+	text-align: center; 
+	padding: 10px 0px 10px 0px;
+	margin: 10px 0px 10px 0px
+}
+
+.mapDisclaimerLinks {
+	margin-top: 5px;
+	text-align:center;
+}
+
+.mapDisclaimerContainer {
+	margin-top: 10px;
+	font-size: 0.9em;
+}
+	
+.propertyDetailsWrapper .headerColor {
+	 background-color: #EFEFEF;
+	 color: #333333;
+	 text-decoration: none;
+} 
+.poiPanelWrapper .paging {
+	width: 100%; 
+	overflow:hidden; 
+	margin: 15px 0px 15px 0px
+} 
+
+
+.profileLowerPanelContainer .thumbnailsContainer {
+	width: 95%;
+	overflow: hidden;
+	margin-left: 20px;
+}
+.profileLowerPanelContainer .thumbnailsContainer .message {
+	margin: 0px 0px 10px 0px;
+}
+
+.profileLowerPanelContainer .thumbnailsContainer .smallImages {
+	border: 1px solid #BEB78E; 
+	margin-right: 5px; 
+	margin-bottom: 5px
+}
+
+.propertyDetailsEmailWrapper {
+}
+
+
+.propertyDetailsEmailWrapper .row {
+  clear: both;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.propertyDetailsEmailWrapper .label {
+ font-weight: bold;
+}
+
+.propertyDetailsEmailWrapper .row span {
+  float: left;
+  margin-right: 5px;
+  text-align: left;
+}
+
+.propertyDetailsEmailWrapper .row span.field {
+  float: left;
+  text-align: left;
+}
+
+.propertyDetailsEmailWrapper .inputfield {
+  color: #333333; 
+  font-size: 11px; 
+  font-weight: normal;
+  width: 170px;
+}
+
+.propertyDetailsEmailWrapper .textbox{
+  color: #333333; 
+  font-size: 11px; 
+  font-weight: normal;
+}
+
+.propertyDetailsEmailWrapper .leftRow {
+	width: 120px;
+}
+	
+#printableMap {
+}
+
+.propertyDirectionsContainer {
+	margin-top: 20px;
+	margin-bottom: 20px;	
+}
+
+.propertyDirectionsContainer .startingAddress {
+	margin-top: 10px;	
+}
+
+.propertyDirectionsContainer #directionsContainer {
+	margin: 20px 0px 10px 0px; 
+	display: none;
+}
+
+.propertyDirectionsContainer #getDirections {
+	margin: 5px 0px 0px 0px;
+}
+
+.propertyDirectionsContainer .fromLocation {
+ 	width: 300px; 
+ 	color: #666666; 	
+}
+
+.subtitle {
+    
+    color: #666666;
+    font-weight: bold;
+    font-size:13px;
+    left: -5px;
+    padding: 3px;
+  
+    top: 9px;
+    margin-bottom:6px;
+}

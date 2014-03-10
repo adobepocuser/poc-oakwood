@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','descendants','static','search','querybuilder','tags'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="List"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <list
+            jcr:primaryType="cq:Widget"
+            title="Amenities"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="descendants"
+                    fieldLabel="Build list using"
+                    name="./listFrom"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(){this.findParentByType('tabpanel').manageTabs(this.getValue(),true);}"
+                        selectionchanged="function(box,value){box.findParentByType('tabpanel').manageTabs(value);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <children
+                            jcr:primaryType="nt:unstructured"
+                            text="Apartment Amenities"
+                            value="children"/>
+                        <descendants
+                            jcr:primaryType="nt:unstructured"
+                            text="Community Amenities"
+                            value="descendants"/>
+                    </options>
+                </listFrom>
+            </items>
+        </list>
+        <children
+            jcr:primaryType="cq:Widget"
+            title="Apartment Amenities"
+            xtype="panel">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(1); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <amenities
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new apartment amenity"
+                    fieldLabel="Amenities"
+                    name="./amenities"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="155"
+                        xtype="textfield"/>
+                </amenities>
+            </items>
+        </children>
+        <descendants
+            jcr:primaryType="cq:Widget"
+            title="Community Amenities"
+            xtype="panel">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(2); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <amenities
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new community amenity"
+                    fieldLabel="Amenities on Left"
+                    name="./amenitiesLeft"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="155"
+                        xtype="textfield"/>
+                </amenities>
+                <amenitiesRight
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new community amenity"
+                    fieldLabel="Amenities on Right"
+                    name="./amenitiesRight"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="155"
+                        xtype="textfield"/>
+                </amenitiesRight>
+            </items>
+        </descendants>
+    </items>
+</jcr:root>

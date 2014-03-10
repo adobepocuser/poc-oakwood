@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="a5091cca-ddc4-4ef4-a1a3-b79f02099fff">
+    <jcr:content
+        cq:name="BoxOne_BusinessWoman.jpg"
+        cq:parentPath="/content/dam/oakwood"
+        dam:lastInvalidateCache="{Date}2014-02-17T16:18:42.720+05:30"
+        dam:s7damAnchorX="{Long}98"
+        dam:s7damAnchorY="{Long}59"
+        dam:s7damHeight="{Long}118"
+        dam:s7damType="Image"
+        dam:s7damWidth="{Long}196"
+        jcr:lastModified="{Date}2014-02-17T16:18:42.666+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        restored="{Boolean}true">
+        <metadata
+            dam:Bitsperpixel="24"
+            dam:extracted="{Date}2014-02-14T15:46:26.000+05:30"
+            dam:Fileformat="JPEG"
+            dam:MIMEtype="image/jpeg"
+            dam:Numberofimages="1"
+            dam:Numberoftextualcomments="0"
+            dam:Physicalheightindpi="-1"
+            dam:Physicalheightininches="-1.0"
+            dam:Physicalwidthindpi="-1"
+            dam:Physicalwidthininches="-1.0"
+            dam:Progressive="no"
+            dam:sha1="9ca33d86f7a78e4a06ce016d7749a5cd4fd748b6"
+            dam:size="12306"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2014-02-17T16:18:36.000+05:30"
+            jcr:lastModified="{Date}2014-02-17T16:18:36.960+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}118"
+            tiff:ImageWidth="{Long}196"
+            xmp:CreatorTool="Adobe Photoshop CS5 Macintosh"
+            xmpMM:DocumentID="xmp.did:C2DA2CCC734911E0B2A9CCF4BB06C1B9"
+            xmpMM:InstanceID="xmp.iid:C2DA2CCB734911E0B2A9CCF4BB06C1B9">
+            <xmpMM:DerivedFrom
+                jcr:primaryType="nt:unstructured"
+                stRef:documentID="xmp.did:C2DA2CCA734911E0B2A9CCF4BB06C1B9"
+                stRef:instanceID="xmp.iid:C2DA2CC9734911E0B2A9CCF4BB06C1B9"
+                newRendition="{Boolean}true"/>
+        </metadata>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

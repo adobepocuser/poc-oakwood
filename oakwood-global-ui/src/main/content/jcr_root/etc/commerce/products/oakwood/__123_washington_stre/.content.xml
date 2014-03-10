@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:scaffolding="/etc/scaffolding/oakwood/property"
+    cq:tags="[Oakwood:unitedKingdom]"
+    jcr:mixinTypes="[cq:Taggable]"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="commerce/components/product"
+    apartment_amenities="[Air Conditioning,,]"
+    booked="true"
+    city="New York City"
+    community_amenities="[Pool,Doorman]"
+    furnished="true"
+    latitude="40.8208549"
+    localscene="&lt;p>Watch the sunrise or set in Battery Park and run along 25 acres of green space overlooking the New York Harbor. World Trade Center memorial site complex and the offices of the World Financial Center are steps from the building. Enjoy your evenings in chic Tribeca and nightlife in the Meatpacking District&amp;nbsp;half&amp;nbsp;a mile away. Shopping and culture within a walking distance at the South Street Seaport, Chinatown, Little Italy and SoHo. Major subway stations provide access up to Midtown and southern ferries make New Jersey and Staten Island within reach.&amp;nbsp;&lt;/p>&#xa;"
+    longitude="-74.025776"
+    name="123 Washington Street"
+    overview="&lt;p>Oakwood features luxury apartments in The Residences at W New York -&amp;nbsp;Downtown&amp;nbsp;overlooking the New York&amp;nbsp;Harbor and Manhattan skyline. 1 World Trade Center, the New York Stock Exchange, Wall Street and Battery Park are at your doorstep. This brand new building opened in&amp;nbsp;September 2010 and&amp;nbsp;features 24hr. doorman/concierge,&amp;nbsp;a&amp;nbsp;fitness center and spa&amp;nbsp;with breathtaking views, a&amp;nbsp;rooftop and resident's lounge and patio,&amp;nbsp;and complimentary breakfast. Enjoy your temporary apartment in style and luxury with custom designed furniture, full kitchens, washer/dryer in-suite, and&amp;nbsp;flat screen&amp;nbsp;TV's. Also included are all utilities, phone, cable, wireless high speed&amp;nbsp;internet, and the full linen package. For your convenience and dining pleasure, access the&amp;nbsp;renowned BLT Bar &amp;amp; Grill on site.&amp;nbsp;&lt;/p>&#xa;"
+    phonenum="877.902.0832"
+    postcode="10006-1509"
+    price="400$"
+    room_type="[studio,onebedroom]"
+    state="New York">
+    <propertyimages jcr:primaryType="nt:unstructured">
+        <propertyimage_3 jcr:primaryType="nt:unstructured">
+            <image
+                jcr:lastModified="{Date}2014-02-25T17:40:47.827+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/geometrixx-outdoors-app/aboutus.jpg"/>
+        </propertyimage_3>
+        <propertyimage_1 jcr:primaryType="nt:unstructured">
+            <image
+                jcr:lastModified="{Date}2014-02-25T17:40:47.827+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/geometrixx-outdoors-app/products.jpg"/>
+        </propertyimage_1>
+        <propertyimage_2 jcr:primaryType="nt:unstructured">
+            <image
+                jcr:lastModified="{Date}2014-02-25T17:40:47.827+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/geometrixx-outdoors-app/reviews.jpg"/>
+        </propertyimage_2>
+    </propertyimages>
+</jcr:root>

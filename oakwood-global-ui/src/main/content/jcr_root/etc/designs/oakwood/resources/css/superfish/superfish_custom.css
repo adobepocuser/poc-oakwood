@@ -1,0 +1,146 @@
+
+/*** Custom Oakwood CSS ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+	z-index: 		1001;
+	font-size: 		13px;
+	
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul {
+	border: 			1px solid #42747f;	
+	background-color: 	#FFFFFF; /* fix iPad safari 1px gaps */
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+.sf-menu a {
+	font-size: 		13px;
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			2.5em; /* match top ul list item height */
+	z-index:		1001;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+
+
+.sf-menu {
+	float:			left;
+}
+.sf-menu a {
+	font-size: 		13px;
+	padding: 		10px 10px; /* this has to change with font size, or else there will be white line gaps on menu */
+	text-decoration: none;	
+}
+.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#42747f;
+	font-size: 		13px;
+	
+}
+.sf-menu li {
+	color: #FFFFFF;
+}
+.sf-menu li li {
+	background:		#FFFFFF;
+}
+.sf-menu li li li {
+	background:		#FFFFFF;
+}
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	background:		#42747f;
+	color: 			#ffffff;
+	outline:		0;
+	font-size: 		13px;
+	
+}
+
+/** keeps parent menu font white, doesn't work in IE 6 **/
+.sf-menu li.sfHover > a {
+	font-size: 		13px;	
+	color: 			#ffffff;
+}
+
+/*** arrows **/
+.sf-menu a.sf-with-ul {
+	padding-right: 	2em;
+	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+}
+.sf-sub-indicator {
+	position:		absolute;
+	display:		block;
+	right:			.75em;
+	top:			1.05em; /* IE6 only */
+	width:			10px;
+	height:			10px;
+	text-indent: 	-999em;
+	overflow:		hidden;
+	background:		url('/etc/designs/oakwood/resources/www.oakwood.com/images/superfish/arrows-ffffff_down.gif') no-repeat center 4px;
+}
+a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	top:			.8em;	
+	font-size: 		13px;
+	
+}
+/* apply hovers to modern browsers */
+a:focus > .sf-sub-indicator,
+a:hover > .sf-sub-indicator,
+a:active > .sf-sub-indicator,
+li:hover > a > .sf-sub-indicator,
+li.sfHover > a > .sf-sub-indicator {	
+		font-size: 		13px;
+}
+
+/* point right for anchors in subs */
+.sf-menu ul .sf-sub-indicator { 
+	background:		url('/etc/designs/oakwood/resources/www.oakwood.com/images/superfish/arrows-ffffff.gif') no-repeat center 3px;
+}
+.sf-menu ul a > .sf-sub-indicator { 
+	background:		url('/etc/designs/oakwood/resources/www.oakwood.com/images/superfish/arrows-ffffff.gif') no-repeat center 3px;
+	font-size: 		13px;
+	
+}
+/* apply hovers to modern browsers */
+.sf-menu ul a:focus > .sf-sub-indicator,
+.sf-menu ul a:hover > .sf-sub-indicator,
+.sf-menu ul a:active > .sf-sub-indicator,
+.sf-menu ul li:hover > a > .sf-sub-indicator,
+.sf-menu ul li.sfHover > a > .sf-sub-indicator {
+	background:		url('/etc/designs/oakwood/resources/www.oakwood.com/images/superfish/arrows-ffffff.gif') no-repeat center 3px;
+	font-size: 		13px;	
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    cq:authorizableCategory=""
+    cq:lastModified="{Date}2014-02-20T20:06:20.624+08:00"
+    cq:lastModifiedBy="admin"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:User"
+    jcr:uuid="c8101cb1-4d91-39dc-980d-11eb512f475e"
+    rep:authorizableId="oakwood_reg_mgr"
+    rep:password="\{SHA-256}870232133bcd86ff-1000-b402a2b76efeb22e191fd28c748614edaf49b2db99e69e01ae956240e94680a3"
+    rep:principalName="oakwood_reg_mgr">
+    <_x002e_tokens jcr:primaryType="rep:Unstructured"/>
+    <preferences
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="cq:Preferences"/>
+    <profile
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="cq/security/components/profile"
+        familyName="Byran"/>
+</jcr:root>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    cq:authorizableCategory="mcm"
+    cq:lastModified="{Date}2014-02-20T13:22:45.510+05:30"
+    cq:lastModifiedBy="admin"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:User"
+    jcr:uuid="a640f954-2a6d-3f0b-bc7f-bea94f1c7d5a"
+    rep:authorizableId="user_us"
+    rep:password="\{SHA-256}b66f19e5ee10370d-1000-3c2e363b4f8b3a76fc281e31763c504368b3cb1b86867d14b60834e6d527b61e"
+    rep:principalName="user_us">
+    <_x002e_tokens jcr:primaryType="rep:Unstructured"/>
+    <preferences
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="cq:Preferences"/>
+    <profile
+        cq:authorizableCategory="mcm"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="cq/security/components/profile"
+        aboutMe="Oakwood User for US"
+        birthday="Dec 26, 1974"
+        birthday_x0040_TypeHint="Date"
+        country="United States"
+        email="user_us@oakwood.com"
+        familyName="US"
+        gender="female"
+        givenName="User"
+        personalization="Oakwood:unitedstates"/>
+</jcr:root>

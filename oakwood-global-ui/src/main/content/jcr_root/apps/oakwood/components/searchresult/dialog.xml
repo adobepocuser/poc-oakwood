@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <config
+                jcr:primaryType="cq:Panel" 
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <rootpath
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="true"
+                        fieldLabel="Root Path"
+                        fieldDescription="Default Path: /etc/commerce/products/oakwood"
+                        name="./rootpath"
+                        width="250"
+                        xtype="pathfield"/>
+                </items>
+            </config>
+        </items>
+    </items>
+</jcr:root>

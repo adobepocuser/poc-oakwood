@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2014-02-17T16:39:24.453+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/oakwood/templates/oakwoodBlankTemplate"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Login"
+        sling:resourceType="oakwood/components/blank">
+        <contentContainer
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <login
+                jcr:created="{Date}2014-02-17T16:34:51.036+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-02-17T16:39:24.438+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/login"
+                continueLabel="Continue"
+                loginLabel="Login"
+                passwordLabel="Password"
+                redirectTo="/content/oakwood/en/home"
+                usernameLabel="Oakwood User"/>
+        </contentContainer>
+    </jcr:content>
+</jcr:root>

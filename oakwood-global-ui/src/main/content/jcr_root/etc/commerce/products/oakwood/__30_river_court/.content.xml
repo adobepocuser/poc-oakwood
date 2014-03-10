@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:scaffolding="/etc/scaffolding/oakwood/property"
+    jcr:mixinTypes="[cq:Taggable]"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="commerce/components/product"
+    apartment_amenities="[High Speed Internet Available,Dishwasher]"
+    city="New York City"
+    community_amenities="[Laundry (On Each Floor),Parking (Not Included)]"
+    latitude="40.8308549"
+    localscene="&lt;p>&lt;li>Within walking distance&amp;nbsp;of Newport Center&amp;nbsp;Mall&lt;/li>&#xa;&lt;li>10 minutes from New York City&lt;/li>&#xa;&lt;li>Close proximity to PATH train and Ferry into New York City&lt;/li>&#xa;&lt;li>Movie theaters, cafes, and restaurants all in the Newport area&lt;/li>&#xa;&lt;li>Hoboken is a short stop away&lt;/li>&#xa;&lt;li>Great waterfront walking area with views of the New York City skyline&lt;/li>&#xa;&lt;/p>&#xa;"
+    longitude="-74.035776"
+    name="30 River Court"
+    overview="&lt;p>&lt;p>&lt;ul>&#xa;&lt;li>This community is located in the Newport area of Jersey City.&amp;nbsp; It is one of the five towers that makes up the Towers of America at Newport.&amp;nbsp;&lt;/li>&#xa;&lt;li>Conveniently located to the PATH station, Light Rail, and Waterway Ferry to the Financial District.&lt;/li>&#xa;&lt;li>Amenities include a 24-hour doorman and fully furnished one and two bedroom apartments.&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/p>&#xa;&lt;/p>&#xa;"
+    phonenum="877.902.0832"
+    postcode="07310"
+    price="189$"
+    room_type="[onebedroom,twobedroom]"
+    state="New York">
+    <propertyimages jcr:primaryType="nt:unstructured">
+        <propertyimage_1 jcr:primaryType="nt:unstructured">
+            <image
+                jcr:lastModified="{Date}2014-02-20T19:57:20.878+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/geometrixx-outdoors-app/gear.jpg"/>
+        </propertyimage_1>
+        <propertyimage_2 jcr:primaryType="nt:unstructured">
+            <image
+                jcr:lastModified="{Date}2014-02-20T19:57:20.878+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/geometrixx-outdoors-app/news.jpg"/>
+        </propertyimage_2>
+    </propertyimages>
+</jcr:root>

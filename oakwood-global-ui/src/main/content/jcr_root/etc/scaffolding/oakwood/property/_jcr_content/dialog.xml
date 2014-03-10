@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="0"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <basic
+            jcr:primaryType="cq:Panel"
+            title="Overview">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <name
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Name"
+                    name="./name"/>
+                <state
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="State"
+                    name="./state"/>
+                <city
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="City"
+                    name="./city"/>
+                <postcode
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="PostCode"
+                    name="./postcode"/>
+                <phoneNum
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Phone Number"
+                        name="./phonenum"/>
+                <tags
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Tags/Keywords"
+                    name="./cq:tags"
+                    xtype="tags"/>
+                <overview
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Overview"
+                    name="./overview"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <format
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <lists
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <justify
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="[paste-wordhtml]"/>
+                        <findreplace
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <paraformat
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <subsuperscript
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <misctools
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <links
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <spellcheck
+                            jcr:primaryType="nt:unstructured"
+                            features="*"
+                            invalidStyle="background-color: #ffdddd;"/>
+                        <undo
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    </rtePlugins>
+                </overview>
+                <localScene
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Local Scene"
+                        name="./localscene"
+                        xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="[paste-wordhtml]"/>
+                        <findreplace
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="*"
+                                invalidStyle="background-color: #ffdddd;"/>
+                        <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                    </rtePlugins>
+                </localScene>
+                <resourcType
+                    jcr:primaryType="cq:Widget"
+                    name="./sling:resourceType"
+                    value="commerce/components/product"
+                    xtype="hidden"/>
+            </items>
+        </basic>
+        <details
+            jcr:primaryType="cq:Panel"
+            title="Property Detail">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <room_type
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Room Type"
+                    name="./room_type"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="nt:unstructured"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <studio
+                                jcr:primaryType="nt:unstructured"
+                                text="Studio"
+                                value="studio"/>
+                            <onebedroom
+                                jcr:primaryType="nt:unstructured"
+                                text="1 Bedroom"
+                                value="onebedroom"/>
+                            <twobedroom
+                                jcr:primaryType="nt:unstructured"
+                                text="2 Bedroom"
+                                value="twobedroom"/>
+                        </options>
+                    </fieldConfig>
+                </room_type>
+                <amenity_fields
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        name="amenity_fields"
+                        title="Amenities"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <apartment_amenities
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Apartment Amenities"
+                                name="./apartment_amenities"
+                                xtype="multifield">
+                            <fieldConfig
+                                    jcr:primaryType="nt:unstructured"
+                                    type="select"
+                                    xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <ac
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Air Conditioning"
+                                            value="Air Conditioning"/>
+                                    <dishwasher
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Dishwasher"
+                                            value="Dishwasher"/>
+                                    <glassshow
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Glass Showers"
+                                            value="Glass Showers"/>
+                                </options>
+                            </fieldConfig>
+                        </apartment_amenities>
+                        <community_amenities
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Community Amenities"
+                                name="./community_amenities"
+                                xtype="multifield">
+                            <fieldConfig
+                                    jcr:primaryType="nt:unstructured"
+                                    type="select"
+                                    xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <pool
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Pool"
+                                            value="Pool"/>
+                                    <doorman
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Doorman"
+                                            value="Doorman"/>
+                                    <elevators
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Elevators"
+                                            value="Elevators"/>
+                                </options>
+                            </fieldConfig>
+                        </community_amenities>
+                    </items>
+                </amenity_fields>
+                <longitude
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Longitude"
+                    name="./longitude"/>
+                <latitude
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Latitude"
+                    name="./latitude"/>
+                <furnished
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Furnished"
+                    inputValue="{Boolean}false"
+                    name="./furnished"
+                    type="checkbox"
+                    xtype="selection"/>
+                <price
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Price"
+                        name="./price"/>
+                <booked
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Booked"
+                        inputValue="{Boolean}false"
+                        name="./booked"
+                        type="checkbox"
+                        xtype="selection"/>
+            </items>
+        </details>
+        <image
+            jcr:primaryType="cq:Panel"
+            title="Images">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <images
+                    jcr:primaryType="cq:Widget"
+                    baseName="propertyimage_"
+                    fieldDescription="Click &quot;+&quot; to add property image"
+                    matchBaseName="false"
+                    name="./propertyimages"
+                    prefix="./"
+                    xtype="imagemultifield"
+                    y="{Long}0">
+                    <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                        <image
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}true"
+                            allowUpload="{Boolean}false"
+                            anchor="95%"
+                            ddAccept="image/*"
+                            ddGroups="[media]"
+                            fileNameParameter="./image/fileName"
+                            fileReferenceParameter="./image/fileReference"
+                            height="200"
+                            name="image/file"
+                            requestSuffix="/image.img.png"
+                            sizeLimit="100"
+                            title="Image"
+                            uploadUrl="/tmp/upload/*"
+                            xtype="html5smartimage4Multifield">
+                            <listeners
+                                jcr:primaryType="nt:unstructured"
+                                beforedestroy="function(field){  CQ.WCM.unregisterDropTargetComponent(field);}"
+                                render="function(field){CQ.WCM.registerDropTargetComponent(field);}"
+                                resize="function(){this.findParentByType('panel').setWidth('600');}"/>
+                        </image>
+                        <resType
+                            jcr:primaryType="cq:Widget"
+                            ignoreData="{Boolean}true"
+                            name="image/sling:resourceType"
+                            value="foundation/components/image"
+                            xtype="hidden"/>
+                    </fieldConfigs>
+                </images>
+            </items>
+        </image>
+    </items>
+</jcr:root>

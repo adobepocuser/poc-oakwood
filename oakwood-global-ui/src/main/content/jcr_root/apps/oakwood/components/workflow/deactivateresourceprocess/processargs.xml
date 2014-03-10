@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Panel"
+    title="Arguments">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <arguments
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}false"
+            collapsible="{Boolean}false"
+            title="Process Arguments"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <replicateAsParticipant
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Select to run the activation in the context of the latest participant."
+                    fieldLabel="Replicate As Participant"
+                    name="./metaData/replicateAsParticipant"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </arguments>
+    </items>
+</jcr:root>

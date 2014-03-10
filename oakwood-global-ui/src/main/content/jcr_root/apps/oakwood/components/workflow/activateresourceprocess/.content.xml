@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="A process to extract and import metadata, if the payload of the step is an asset or part of an asset."
+    jcr:primaryType="cq:Component"
+    jcr:title="Activate Page/Asset"
+    sling:resourceSuperType="cq/workflow/components/model/process"
+    allowedParents="[*/parsys]"
+    componentGroup="WCM Workflow"/>

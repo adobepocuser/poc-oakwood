@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.oakwood.global</groupId>
+	<artifactId>oakwood-global-pom-parent</artifactId>
+	<packaging>pom</packaging>
+	<name>oakwood Global Parent POM</name>
+	<version>1.0.0.0.0-SNAPSHOT</version>
+
+
+	<properties>
+		<git-repo-name>oakwood_global</git-repo-name>
+		<jira-project-key>oakwood</jira-project-key>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.2.1</version>
+					<configuration>
+						<tagNameFormat>@{project.groupId}-@{project.artifactId}-@{project.version}</tagNameFormat>
+						<preparationGoals>clean install</preparationGoals>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+
+	<repositories>
+	    <repository>
+			<id>adobe-public-releases</id>
+			<name>Adobe Public Repository</name>
+			<url>http://repo.adobe.com/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	<!--	<repository>
+			<id>artifactory-libs-release</id>
+			<name>Artifactory Libs Release</name>
+			<url>http://artifactory.digitas.com/artifactory/libs-release</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>artifactory-libs-snapshot</id>
+			<name>Artifactory Libs Snapshot</name>
+			<url>http://artifactory.digitas.com/artifactory/libs-snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>-->
+	</repositories>
+
+	<pluginRepositories>
+	    <pluginRepository>
+			<id>adobe-public-releases</id>
+			<name>Adobe Public Repository</name>
+			<url>http://repo.adobe.com/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<!--<pluginRepository>
+			<id>artifactory-plugins-release</id>
+			<name>Artifactory Plugins Release</name>
+			<url>http://artifactory.digitas.com/artifactory/plugins-release</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</pluginRepository>
+		<pluginRepository>
+			<id>artifactory-plugins-snapshot</id>
+			<name>Artifactory Plugins Snapshot</name>
+			<url>http://artifactory.digitas.com/artifactory/plugins-snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository> -->
+	</pluginRepositories>
+
+</project>

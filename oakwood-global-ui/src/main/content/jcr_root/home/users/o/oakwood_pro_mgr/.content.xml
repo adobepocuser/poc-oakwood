@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    cq:authorizableCategory=""
+    cq:lastModified="{Date}2014-02-20T20:05:51.386+08:00"
+    cq:lastModifiedBy="admin"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:User"
+    jcr:uuid="761324cb-5c0d-38b9-8a0d-c6c1e8e422fa"
+    rep:authorizableId="oakwood_pro_mgr"
+    rep:password="\{SHA-256}09851ae94dc2a12e-1000-d7b4dffc4e6a3185cee121c8ad27ed25792795770ecb2124a462be0359f1fa65"
+    rep:principalName="oakwood_pro_mgr">
+    <_x002e_tokens jcr:primaryType="rep:Unstructured"/>
+    <preferences
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="cq:Preferences"/>
+    <profile
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="cq/security/components/profile"
+        familyName="Cook"/>
+</jcr:root>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/default"
+        cq:lastModified="{Date}2014-02-20T20:24:17.122+08:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="oakwood active"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <initiatorparticipant
+                jcr:created="{Date}2014-02-20T20:20:14.178+08:00"
+                jcr:createdBy="admin"
+                jcr:description="A sample participant chooser that chooses the workflow initiator as participant."
+                jcr:lastModified="{Date}2014-02-20T20:20:14.178+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Workflow Initiator Participant Chooser"
+                sling:resourceType="cq/workflow/components/workflow/initiatorparticipantchooser">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    DYNAMIC_PARTICIPANT="/etc/workflow/scripts/initiator-participant-chooser.ecma"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </initiatorparticipant>
+            <and
+                jcr:created="{Date}2014-02-20T20:20:44.134+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-02-20T20:20:44.134+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/workflow/components/model/and"
+                branches="2">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <participant
+                        jcr:created="{Date}2014-02-20T20:21:13.770+08:00"
+                        jcr:createdBy="admin"
+                        jcr:description="please input image inforamtion"
+                        jcr:lastModified="{Date}2014-02-20T20:22:11.075+08:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Image Input Step"
+                        sling:resourceType="cq/workflow/components/model/participant">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PARTICIPANT="/home/users/o/oakwood_img_creator"/>
+                    </participant>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <participant
+                        jcr:created="{Date}2014-02-20T20:21:16.436+08:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2014-02-20T20:22:45.586+08:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Amet Input Step"
+                        sling:resourceType="cq/workflow/components/model/participant">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PARTICIPANT="/home/users/o/oakwood_ame_creator"/>
+                    </participant>
+                </_x0032_>
+            </and>
+            <participant
+                jcr:created="{Date}2014-02-20T20:23:00.207+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-02-20T20:23:29.284+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Property Manager Approve Content"
+                sling:resourceType="cq/workflow/components/model/participant">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PARTICIPANT="/home/users/o/oakwood_pro_mgr"/>
+            </participant>
+            <participant_0
+                jcr:created="{Date}2014-02-20T20:23:34.534+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-02-20T20:24:07.918+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Regional Manager Validate Content"
+                sling:resourceType="cq/workflow/components/model/participant">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PARTICIPANT="/home/users/o/oakwood_reg_mgr"/>
+            </participant_0>
+            <activateresourceproc
+                jcr:created="{Date}2014-02-20T20:24:17.054+08:00"
+                jcr:createdBy="admin"
+                jcr:description="A process to activate a page or asset"
+                jcr:lastModified="{Date}2014-02-20T20:24:17.054+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Activate Page/Asset"
+                sling:resourceType="oakwood/components/workflow/activateresourceprocess">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.day.cq.wcm.workflow.process.ActivatePageProcess"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </activateresourceproc>
+        </flow>
+        <model/>
+    </jcr:content>
+</jcr:root>

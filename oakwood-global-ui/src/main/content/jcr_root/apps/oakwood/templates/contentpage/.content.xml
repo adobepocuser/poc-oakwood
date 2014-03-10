@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Generic template for most Oakwood pages"
+    jcr:primaryType="cq:Template"
+    jcr:title="Oakwood Content Page"
+    allowedPaths="[/content/oakwood(/.*)?]"
+    ranking="{Long}90">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="oakwood/components/contentpage">
+        <titleImage
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/titleImage"/>
+    </jcr:content>
+</jcr:root>

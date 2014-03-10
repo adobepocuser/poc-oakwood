@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter vesion="1.0">
+	<filter root="/apps/oakwood" />
+	<filter root="/etc/designs/oakwood" />
+    <filter root="/etc/scaffolding/oakwood" />
+</workspaceFilter>

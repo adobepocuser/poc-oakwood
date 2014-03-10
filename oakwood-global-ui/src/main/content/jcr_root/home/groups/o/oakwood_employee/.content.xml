@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    cq:lastModified="{Date}2014-02-20T19:11:26.782+08:00"
+    cq:lastModifiedBy="admin"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="rep:Group"
+    jcr:uuid="5ab55c53-90dd-3351-a858-d37617d843a4"
+    rep:authorizableId="oakwood_employee"
+    rep:members="{WeakReference}[9708566f-13c2-36f4-8362-c299ef6c71f6,57a912d2-f5dd-31ee-a294-58945f082338,c51aedd0-6525-3f0c-b140-aea5ff0ff2de]"
+    rep:principalName="oakwood_employee">
+    <preferences
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="cq:Preferences"/>
+    <profile
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="cq/security/components/profile"
+        givenName="Oakwood employee"/>
+</jcr:root>

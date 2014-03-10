@@ -1,0 +1,4 @@
+/*add PropertyDarkLogo style for HugeHeroBanner white logo*/
+#CQ .x-panel-body.propertyDarkLogo .cq-image-canvas{
+    background-color:#000000;
+}

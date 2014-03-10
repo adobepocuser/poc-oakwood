@@ -1,0 +1,4 @@
+.searchboxWrapper { /** for whatever reason, there is a gap between search button and panel in ie7 **/
+	position: relative;
+	top: -4px;
+}

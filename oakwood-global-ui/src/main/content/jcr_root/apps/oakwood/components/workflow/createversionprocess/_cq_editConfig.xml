@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:dialogMode="floating"
+    jcr:primaryType="cq:EditConfig">
+    <cq:formParameters
+        jcr:description="A process to create a version for either a page or an asset."
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Create Version"
+        PROCESS="com.day.cq.wcm.workflow.process.CreateVersionProcess"
+        PROCESS_AUTO_ADVANCE="true"/>
+    <cq:listeners
+        jcr:primaryType="cq:EditListenersConfig"
+        afterdelete="CQ.flow.Step.afterDelete"
+        afteredit="CQ.flow.Step.afterEdit"
+        afterinsert="CQ.workflow.flow.Step.afterInsert"
+        afterMove="CQ.flow.Step.afterMove"/>
+</jcr:root>
